@@ -49,3 +49,21 @@ Key:AddButton({
             end
   	end    
 })
+
+
+Key:AddButton({
+    Name = "Get Key",
+    Callback = function()
+        setclipboard("https://discord.gg/uZY2dzCFf2")
+
+
+        OrionLib:MakeNotification({
+            Name = "Key!",
+            Content = "Discord Invite Copied",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+   
+   
+    end
+    })
