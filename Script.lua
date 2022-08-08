@@ -19,6 +19,7 @@ Universal:AddButton({
 
 
 
+
 Universal:AddButton({
 	Name = "FE GUI",
 	Callback = function()
@@ -174,7 +175,7 @@ Jailbreak:AddButton({
 
 
     local Phantom = Window:MakeTab({
-        Name = "Prison Life",
+        Name = "Phantom Forces",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
