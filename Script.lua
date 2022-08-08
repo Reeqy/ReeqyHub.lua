@@ -305,6 +305,21 @@ Jailbreak:AddButton({
 
 
 
+        local Blobxburg = Window:MakeTab({
+            Name = "Bloxburg",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+        Bloxburg:AddButton({
+            Name = "Bloxburg",
+            Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+                    
+            end    
+        })
+
+
 
 
         local Credits = Window:MakeTab({
@@ -348,3 +363,9 @@ Jailbreak:AddButton({
 
 
         
+
+
+
+
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
