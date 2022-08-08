@@ -305,7 +305,7 @@ Jailbreak:AddButton({
 
 
 
-        local Blobxburg = Window:MakeTab({
+        local Bloxburg = Window:MakeTab({
             Name = "Bloxburg",
             Icon = "rbxassetid://4483345998",
             PremiumOnly = false
