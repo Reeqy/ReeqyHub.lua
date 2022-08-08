@@ -287,6 +287,25 @@ Jailbreak:AddButton({
 
 
 
+        local Funky = Window:MakeTab({
+            Name = "Funky Friday",
+            Icon = "rbxassetid://4483345998",
+            PremiumOnly = false
+        })
+
+
+
+        Floppa:AddButton({
+            Name = "Auto Player",
+            Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+                    
+            end    
+        })
+
+
+
+
 
         local Credits = Window:MakeTab({
             Name = "Credits",
