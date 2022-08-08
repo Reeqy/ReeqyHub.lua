@@ -295,7 +295,7 @@ Jailbreak:AddButton({
 
 
 
-        Floppa:AddButton({
+        Funky:AddButton({
             Name = "Auto Player",
             Callback = function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
