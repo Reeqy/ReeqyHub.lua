@@ -205,7 +205,7 @@ Jailbreak:AddButton({
     })
 
     ComabatW:AddButton({
-        Name = "Project Hook",
+        Name = "Project Hookq",
         Callback = function()
             loadstring(game:HttpGet("https://projecthook.xyz/scripts/new-free.lua"))()
         end    
@@ -423,9 +423,21 @@ Jailbreak:AddButton({
 
 
 
+            local Bedwars = Window:MakeTab({
+                Name = "Bedwars",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
 
 
 
+            Bedwars:AddButton({
+                Name = "Vape",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+                        
+                end    
+            })
 
 
 
