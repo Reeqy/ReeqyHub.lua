@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ReeqyHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ReeqyHub", HidePremium = false, SaveConfig = true, ConfigFolder = "ReeqyHub"})
 
 
 
@@ -59,11 +59,12 @@ PrisonLife:AddButton({
 })
 
 
-
-
-
-
-
+PrisonLife:AddButton({
+	Name = "GodMode",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/QjRT7sy2'),true))()
+    end    
+})
 
 
 
@@ -251,6 +252,16 @@ Jailbreak:AddButton({
         })
 
 
+        MM2:AddButton({
+            Name = "Xenny-Ware",
+            Callback = function()
+                loadstring(game:HttpGet"https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua")()       
+             end    
+    
+            })
+    
+
+
 
         local SharkBite = Window:MakeTab({
             Name = "Shark Bite",
@@ -322,31 +333,7 @@ Jailbreak:AddButton({
 
 
 
-        local Credits = Window:MakeTab({
-            Name = "Credits",
-            Icon = "rbxassetid://4483345998",
-            PremiumOnly = false
-        })
-
-
-        Credits:AddButton({
-            Name = "Discord",
-            Callback = function()
-                setclipboard("https://discord.gg/uZY2dzCFf2")
-           
-           
-                OrionLib:MakeNotification({
-                    Name = "Discord",
-                    Content = "Discord Invite Copied",
-                    Image = "rbxassetid://4483345998",
-                    Time = 5
-                })
-           
-           
-            end
-            })
-
-            Credits:AddLabel("CREDIT TO ALL SCRIPT OWNERS!")
+        
 
 
 
@@ -425,35 +412,46 @@ Jailbreak:AddButton({
 
 
 
+
+
+            local Credits = Window:MakeTab({
+                Name = "Credits",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+    
+    
+            Credits:AddButton({
+                Name = "Discord",
+                Callback = function()
+                    setclipboard("https://discord.gg/uZY2dzCFf2")
+               
+               
+                    OrionLib:MakeNotification({
+                        Name = "Discord",
+                        Content = "Discord Invite Copied",
+                        Image = "rbxassetid://4483345998",
+                        Time = 5
+                    })
+               
+               
+                end
+                })
+    
+                Credits:AddLabel("CREDIT TO ALL SCRIPT OWNERS!")
+
+
         OrionLib:Init()
 
 
 
 
 
-        Credits:AddButton({
-            Name = "Help us promo!",
-            Callback = function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Reeqy/ReeqyHub.lua/main/Promo.lua"))()
-           
-           
-                OrionLib:MakeNotification({
-                    Name = "Discord",
-                    Content = "Discord Invite will start soon. (120 seconds)",
-                    Image = "rbxassetid://4483345998",
-                    Time = 10
-                })
-           
-           
-            end
-            })
-        
 
 
 
 
 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/Script.lua"))()
 
 
 
