@@ -27,6 +27,13 @@ Universal:AddButton({
     end    
 })
 
+Universal:AddButton({
+	Name = "AimHot",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+    end    
+})
+
 
 Universal:AddButton({
 	Name = "CMD-X",
