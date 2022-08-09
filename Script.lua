@@ -350,6 +350,75 @@ Jailbreak:AddButton({
 
 
 
+            local Boat = Window:MakeTab({
+                Name = "Build a Boat",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+
+            Boat:AddButton({
+                Name = "Vynixius",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/Script.lua"))()
+                        
+                end    
+            })
+
+
+
+
+
+
+
+            local Pet = Window:MakeTab({
+                Name = "Pet sim X",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+
+            Pet:AddButton({
+                Name = "BK PET",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+                        
+                end    
+            })
+
+
+            local Adopt = Window:MakeTab({
+                Name = "Adopt Me",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+
+            Adopt:AddButton({
+                Name = "VG Hub",
+                Callback = function()
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+                        
+                end    
+            })
+
+
+            local Mine = Window:MakeTab({
+                Name = "Mining Simulator 2",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+
+            Mine:AddButton({
+                Name = "Zeerox",
+                Callback = function()
+                    loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
+                        
+                end    
+            })
+
+
 
 
 
@@ -362,10 +431,38 @@ Jailbreak:AddButton({
 
 
 
+        Credits:AddButton({
+            Name = "Help us promo!",
+            Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Reeqy/ReeqyHub.lua/main/Promo.lua"))()
+           
+           
+                OrionLib:MakeNotification({
+                    Name = "Discord",
+                    Content = "Discord Invite will start soon. (120 seconds)",
+                    Image = "rbxassetid://4483345998",
+                    Time = 10
+                })
+           
+           
+            end
+            })
         
 
 
 
 
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/Scar%20Hub"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/Script.lua"))()
+
+
+
+
+
+
+
+
+
+
+
+        
