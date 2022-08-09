@@ -198,9 +198,18 @@ Jailbreak:AddButton({
     })
 
 
+    local ComabatW = Window:MakeTab({
+        Name = "Combat Warriors",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
 
-
-
+    ComabatW:AddButton({
+        Name = "Project Hook",
+        Callback = function()
+            loadstring(game:HttpGet("https://projecthook.xyz/scripts/new-free.lua"))()
+        end    
+    })
 
     local Strucid = Window:MakeTab({
         Name = "Strucid",
