@@ -128,6 +128,14 @@ Jailbreak:AddButton({
     })
 
 
+
+
+
+
+
+
+
+
     Dahood:AddButton({
         Name = "Dimag X",
         Callback = function()
@@ -162,6 +170,21 @@ Jailbreak:AddButton({
     })
 
 
+
+    Dahood:AddButton({
+        Name = "AimLock 2",
+        Callback = function()
+            loadstring(game:HttpGet('    https://pastebin.com/fyB2kreR', true))()
+        end    
+    })
+
+
+
+
+
+
+
+    
 
     Dahood:AddButton({
         Name = "Faded",
