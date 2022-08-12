@@ -171,13 +171,13 @@ Jailbreak:AddButton({
 
 
 
+
     Dahood:AddButton({
         Name = "AimLock 2",
         Callback = function()
-            loadstring(game:HttpGet('    https://pastebin.com/fyB2kreR', true))()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/JsfuayASbsfuWGakCmhzVwaKJsfuayASbsfuWGa/EternalJNshAIw-mpaAkw-VkbgA/main/eternal.lua')))()
         end    
     })
-
 
 
 
