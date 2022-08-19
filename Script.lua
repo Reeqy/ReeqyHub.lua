@@ -240,7 +240,7 @@ local Doors = Window:MakeTab({
 
 
 
-Jailbreak:AddButton({
+Doors:AddButton({
 	Name = "Doors GUI",
 	Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/doors'),true))()
@@ -251,7 +251,6 @@ Jailbreak:AddButton({
 
 
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/doors'),true))()
 
 
 Jailbreak:AddButton({
