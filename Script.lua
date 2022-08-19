@@ -3,11 +3,34 @@ local Window = OrionLib:MakeWindow({Name = "ReeqyHub", HidePremium = false, Save
 
 
 
+
+
 local Universal = Window:MakeTab({
 	Name = "Universal",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+
+
+
+OrionLib:MakeNotification({
+	Name = "ReeqyHub",
+	Content = "Don't see a script you want? tell us on discord!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 Universal:AddButton({
@@ -20,12 +43,135 @@ Universal:AddButton({
 
 
 
+
+
+
+
+
+
+Universal:AddBind({
+	Name = "Speed Boost",
+	Default = Enum.KeyCode.L,
+	Hold = false,
+	Callback = function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+	end    
+})
+
+
+Universal:AddBind({
+	Name = "Normal Speed",
+	Default = Enum.KeyCode.K,
+	Hold = false,
+	Callback = function()
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end    
+})
+
+
+
+
+
+
+
+
+Universal:AddButton({
+	Name = "Aimblox",
+	Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/Wheeleee/AIMWARE/main/Startup")()
+    end    
+})
+
+
+
+Universal:AddButton({
+	Name = "Fov Changer",
+	Callback = function()
+        loadstring(game:HttpGet"https://pastebin.com/VBn4XRju")()
+    end    
+})
+
+
+
+
+
+
+
+
+
+
+Universal:AddButton({
+	Name = "Anti AFK",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+    end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Universal:AddButton({
+	Name = "Domain Hub",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+    end    
+})
+
+
+
+Universal:AddButton({
+	Name = "Avatar Stealer",
+	Callback = function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+    end    
+})
+
 Universal:AddButton({
 	Name = "FE GUI",
 	Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/VZJEYiJF", true))()
     end    
 })
+
+
+
+
+
+
+
+
+
+
+Universal:AddButton({
+	Name = "Server stats",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/qSQKxrkt", true))()
+    end    
+})
+
+
+
+
 
 Universal:AddButton({
 	Name = "AimHot",
@@ -85,6 +231,27 @@ local Jailbreak = Window:MakeTab({
 
 
 
+local Doors = Window:MakeTab({
+	Name = "Jailbreak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+Jailbreak:AddButton({
+	Name = "Doors GUI",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/doors'),true))()
+    end    
+})
+
+
+
+
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/doors'),true))()
 
 
 Jailbreak:AddButton({
@@ -221,6 +388,15 @@ Jailbreak:AddButton({
     })
 
 
+
+    Phantom:AddButton({
+        Name = "Phantom Forces GUI (Less options)",
+        Callback = function()
+            loadstring(game:HttpGet'https://raw.githubusercontent.com/Paygammy/RBXAimAssistant/release/aim-assistant.lua')()
+        end    
+    })
+
+
     local ComabatW = Window:MakeTab({
         Name = "Combat Warriors",
         Icon = "rbxassetid://4483345998",
@@ -259,20 +435,94 @@ Jailbreak:AddButton({
 
 
 
-    local Bloxfruit = Window:MakeTab({
-        Name = "Blox fruit",
+
+    local Sonic = Window:MakeTab({
+        Name = "Sonic Speed Sim",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+
+    Sonic:AddButton({
+        Name = "Itachi Hub",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+        end    
+    })
+
+
+    local Donate = Window:MakeTab({
+        Name = "Pls Donate",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Donate:AddButton({
+        Name = "VG Hub",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+                  end    
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+    local Meep = Window:MakeTab({
+        Name = "Meep City",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
 
 
 
-    Bloxfruit:AddButton({
-        Name = "Blox Fruit",
+    Meep:AddButton({
+        Name = "Synlope",
         Callback = function()
-            loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()      
-          end    
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/mpcity/main/loader.lua",true))()
+        end    
     })
+
+
+
+
+    local Goal = Window:MakeTab({
+        Name = "Goal Sim",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Goal:AddButton({
+        Name = "Dragon Slayer",
+        Callback = function()
+            loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+        end    
+    })
+
+
+
+    local Clicker = Window:MakeTab({
+        Name = "Clicker SIm",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Clicker:AddButton({
+        Name = "Clicker Sim GUI",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Kederal/script.gg/main/loader.lua"))()
+        end    
+    })
+
+
+
 
 
 
@@ -461,6 +711,136 @@ Jailbreak:AddButton({
                         
                 end    
             })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+  
+
+
+            local Race = Window:MakeTab({
+                Name = "Flea the Facility",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+
+            Race:AddButton({
+                Name = "Race Clicker GUI (Ultra-Hub)",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/boomcacas/androminome/main/hub"))()
+               end    
+            })
+
+
+            Race:AddButton({
+                Name = "Race Clicker GUI (androminome)",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+               end    
+            })
+
+
+            local Breaking = Window:MakeTab({
+                Name = "Breaking Point",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+            Breaking:AddButton({
+                Name = "OutLaw Hub",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/OutlawsHub/Free/V6.lua"))()
+                end    
+            })
+
+
+            local Sea = Window:MakeTab({
+                Name = "Sea Peice",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+            Sea:AddButton({
+                Name = "Sea Peice GUI",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/sea_piece.lua"))()
+                end    
+            })
+
+
+            local Flea = Window:MakeTab({
+                Name = "Flea the Facility",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+            Flea:AddButton({
+                Name = "Flea the Facility GUI v1.0",
+                Callback = function()
+                    loadstring(game:HttpGetAsync("https://polar7.wtf/Arctic/ArcticHub/Loader.txt"))()
+                       end    
+            })
+
+
+            local Rush = Window:MakeTab({
+                Name = "Zombie Rush",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+            Rush:AddButton({
+                Name = "Zombie Rush",
+                Callback = function()
+                    loadstring(game:HttpGetAsync("https://polar7.wtf/Arctic/ArcticHub/Loader.txt"))()
+                       end    
+            })
+
+
+
+
+
+
+
+
+
+
+            local RF = Window:MakeTab({
+                Name = "RainBow Friends",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+            
+            RF:AddButton({
+                Name = "Rainbow Friends GUI",
+                Callback = function()
+                    loadstring(game:HttpGet("https://pastebin.com/raw/yVhAwibN"))()                        
+                end    
+            })
+
+
+
+
+
+
+
 
 
 
