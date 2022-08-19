@@ -246,7 +246,7 @@ Jailbreak:AddButton({
 
 
 local Doors = Window:MakeTab({
-	Name = "Jailbreak",
+	Name = "Doors",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
