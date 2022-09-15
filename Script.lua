@@ -841,6 +841,22 @@ Doors:AddButton({
 
 
 
+            local Crim = Window:MakeTab({
+                Name = "criminality",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+
+            Crim:AddButton({
+                Name = "FemWare",
+                Callback = function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/JackHiggly/RobloxThings/main/FemWare0", true))()
+                end    
+            })
+
+
+
+
 
 
 
