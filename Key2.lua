@@ -27,9 +27,9 @@ local Window = Rayfield:CreateWindow({
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = "Sophie1"
   
-      Rayfield:Destroy()
+      
+      local Tab = Window:CreateTab("Testing", 4483362458)
 
     }
 })
 
-wait(10)
