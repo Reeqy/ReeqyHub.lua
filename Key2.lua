@@ -9,7 +9,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "Reeqy",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      FolderName = "ReeqyHub", -- Create a custom folder for your hub/game
       FileName = "Big Hub"
    },
    Discord = {
